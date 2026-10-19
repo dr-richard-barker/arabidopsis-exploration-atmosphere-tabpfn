@@ -1,0 +1,6 @@
+# Jekyll configuration for GitHub Pages
+title: Arabidopsis Exploration Atmosphere TabPFN
+description: Decoupling Total Barometric Pressure from Oxygen Partial Pressure in Arabidopsis using TabPFN v2
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag

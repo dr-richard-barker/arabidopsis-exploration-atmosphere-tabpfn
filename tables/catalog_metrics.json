@@ -1,0 +1,23 @@
+{
+  "candidate_occurrences": 485,
+  "condition_groups": 52,
+  "files_inventoried": 1952,
+  "hypobaria_sample_memberships": 148,
+  "hypobaria_subseries": 4,
+  "master_records": 22,
+  "nominal_target_oxygen_fraction": 0.34,
+  "nominal_target_po2_kpa": 19.222583333352386,
+  "nominal_target_pressure_kpa": 56.5370098039776,
+  "relevance_counts": {
+    "ADJACENT": 11,
+    "CORE/DIRECT": 5,
+    "EXCLUDED": 3,
+    "WEAK": 3
+  },
+  "sample_audit_rows": 164,
+  "search_api_pages": 45,
+  "unique_hypobaria_gsms": 130,
+  "unique_sample_metadata_records": 146,
+  "validated_records": 16,
+  "web_search_queries": 23
+}

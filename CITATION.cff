@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this catalog or its supporting code, cite this version and the original datasets used."
+type: dataset
+title: "Arabidopsis exploration-atmosphere omics: curated metadata catalog and feasibility audit"
+version: 0.1.0
+date-released: 2026-10-16
+authors:
+  - family-names: Barker
+    given-names: Richard John
+abstract: "Public metadata catalog of Arabidopsis low-pressure and oxygen-related omics, treated single-nucleus comparators and plant reference atlases. Supporting original code is MIT; original documentation and catalog annotations are CC BY 4.0. Third-party sources retain their rights. No biological measurement data are redistributed."
+license: CC-BY-4.0
+keywords:
+  - Arabidopsis thaliana
+  - hypobaria
+  - exploration atmosphere
+  - oxygen
+  - single-nucleus RNA sequencing
+  - metadata catalog

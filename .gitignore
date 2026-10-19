@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Testing & caches
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# IDE & OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Raw large archives and sparse matrices (downloadable via src/atmos_ml/download_data.py)
+*.tar
+*.matrix.mtx.gz
+
+# Local temporary/scratch
+private-refresh/
+*.body
+scratch/

@@ -1,0 +1,25 @@
+{
+  "verified_utc": "2026-10-16T14:24:33+00:00",
+  "release_version": "0.1.0",
+  "archive": "arabidopsis_exploration_atmosphere_v0.1.0.zip",
+  "archive_members": 43,
+  "internal_file_checksums_verified": 42,
+  "tests_passed": 16,
+  "clean_environment_install": "passed after adding pinned wheel build dependency",
+  "clean_extracted_offline_build_validate_report": "passed",
+  "all_public_csv_and_metrics_identical_to_clean_rebuild": true,
+  "citation_cff_schema": "valid 1.2.0",
+  "zenodo_metadata_required_fields": "passed; not uploaded",
+  "word_report": {
+    "word_paragraphs": 55,
+    "word_tables": 5,
+    "word_hyperlinks": 29,
+    "all_text_and_tables_match_markdown": true,
+    "table_layout_structural_checks": "passed",
+    "visual_render_review": "Not performed; no embedded figures"
+  },
+  "word_visual_render": "Not verified; optional LibreOffice conversion produced no PDF",
+  "measurement_files_downloaded": false,
+  "remote_upload_or_doi_reservation": false,
+  "archive_sha256": "dc9cd4f56f49c19c30d1db36d4290c4eaae12a507018b427fbca65c9c1672044"
+}

@@ -1,0 +1,46 @@
+canonical_study_id,accession,normalized_alias,relationship
+CNP0002614,CNP0002614,CNP0002614,canonical
+CNP0002614,GDS0000056,GDS0000056,explicit linked accession/version/companion assay; see modality
+E-MTAB-11231,E-MTAB-11231,E-MTAB-11231,canonical
+GSE11558,GSE11558,GSE11558,canonical
+GSE14493,GSE14493,GSE14493,canonical
+GSE14502,GSE14502,GSE14502,canonical
+GSE152766,GSE152766,GSE152766,canonical
+GSE152766,PRJNA640389,PRJNA640389,explicit linked accession/version/companion assay; see modality
+GSE152766,SRP267870,SRP267870,explicit linked accession/version/companion assay; see modality
+GSE226097,GSE226097,GSE226097,canonical
+GSE273033,GSE273033,GSE273033,canonical
+GSE273033,GSE273926,GSE273926,explicit linked accession/version/companion assay; see modality
+GSE308672,GSE308672,GSE308672,canonical
+GSE308672,PRJNA1332432,PRJNA1332432,explicit linked accession/version/companion assay; see modality
+GSE87867,GSE87867,GSE87867,canonical
+GSE87867,OSD-134,OSD-134,explicit linked accession/version/companion assay; see modality
+GSE87867,GLDS-134,OSD-134,explicit linked accession/version/companion assay; see modality
+GSE87867,PRJNA347979,PRJNA347979,explicit linked accession/version/companion assay; see modality
+GSE87868,GSE87868,GSE87868,canonical
+GSE87868,OSD-136,OSD-136,explicit linked accession/version/companion assay; see modality
+GSE87868,GLDS-136,OSD-136,explicit linked accession/version/companion assay; see modality
+GSE87868,PRJNA347978,PRJNA347978,explicit linked accession/version/companion assay; see modality
+GSE87903,GSE87903,GSE87903,canonical
+GSE87903,PRJNA348135,PRJNA348135,explicit linked accession/version/companion assay; see modality
+GSE87904,GSE87904,GSE87904,canonical
+GSE87904,PRJNA348134,PRJNA348134,explicit linked accession/version/companion assay; see modality
+OSD-135,OSD-135,OSD-135,canonical
+OSD-135,GLDS-135,OSD-135,explicit linked accession/version/companion assay; see modality
+OSD-137,OSD-137,OSD-137,canonical
+OSD-137,GLDS-137,OSD-137,explicit linked accession/version/companion assay; see modality
+PAUL_2004_HYPOBARIA,PAUL_2004_HYPOBARIA,PAUL_2004_HYPOBARIA,canonical
+PAUL_2004_HYPOBARIA,10.1104/pp.103.032607,10.1104/pp.103.032607,explicit linked accession/version/companion assay; see modality
+PRJNA742744,PRJNA742744,PRJNA742744,canonical
+PXD001815,PXD001815,PXD001815,canonical
+PXD001815,PXD002353,PXD002353,explicit linked accession/version/companion assay; see modality
+PXD013868,PXD013868,PXD013868,canonical
+PXD031138,PXD031138,PXD031138,canonical
+PXD046263,PXD046263,PXD046263,canonical
+ZENODO16536514,ZENODO16536514,ZENODO16536514,canonical
+ZENODO16536514,10.5281/zenodo.16536514,10.5281/zenodo.16536514,explicit linked accession/version/companion assay; see modality
+ZENODO16536514,10.5281/zenodo.15433772,10.5281/zenodo.15433772,explicit linked accession/version/companion assay; see modality
+ZENODO16536514,10.5281/zenodo.15433773,10.5281/zenodo.15433773,explicit linked accession/version/companion assay; see modality
+GSE87867;GSE87868,GSE87869,GSE87869,"SuperSeries wrapper, not independent experiment"
+GSE87903;GSE87904,GSE87905,GSE87905,"SuperSeries wrapper, not independent experiment"
+GSE14493;GSE14502,GSE14578,GSE14578,"SuperSeries wrapper, not independent experiment"

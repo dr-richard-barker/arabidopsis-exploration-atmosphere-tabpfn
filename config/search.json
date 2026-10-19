@@ -1,0 +1,292 @@
+{
+  "version": "0.1.0",
+  "organism": "Arabidopsis thaliana",
+  "jobs": [
+    {
+      "label": "geo_01",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (hypobaric) AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_02",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (hypobaria) AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_03",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"low atmospheric pressure\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_04",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"reduced pressure\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_05",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"exploration atmosphere\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_06",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"oxygen enriched\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_07",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (hyperoxia) AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_08",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND ((hypoxia OR \"low oxygen\") AND (\"single cell\" OR \"single nucleus\" OR \"single nuclei\" OR snRNA)) AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_09",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND ((hypobaric OR hypobaria) AND (proteomic OR metabolomic OR methylation OR ATAC)) AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_10",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"Dissecting Low Atmospheric Pressure\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_11",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"Patterns of Arabidopsis gene expression\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_12",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"cell-specific\" AND hypoxia) AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_13",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"mild decreases\" AND oxygen) AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_14",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"translatome\" AND hypoxia) AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_15",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"oxygen\" AND \"metabolite profiling\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_16",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"shoot and root\" AND \"single cell\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_17",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"single-cell\" AND \"root atlas\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_18",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"spatial\" AND \"life cycle\") AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_19",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"hypoxia\" AND (proteomics OR methylation OR \"ATAC-seq\")) AND gse[Entry Type]"
+    },
+    {
+      "label": "geo_20",
+      "repository": "GEO",
+      "kind": "entrez",
+      "db": "gds",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"oxygen\" AND \"34%\") AND gse[Entry Type]"
+    },
+    {
+      "label": "sra_1",
+      "repository": "SRA",
+      "kind": "entrez",
+      "db": "sra",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (hypobaric OR hypobaria)"
+    },
+    {
+      "label": "sra_2",
+      "repository": "SRA",
+      "kind": "entrez",
+      "db": "sra",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (\"exploration atmosphere\")"
+    },
+    {
+      "label": "sra_3",
+      "repository": "SRA",
+      "kind": "entrez",
+      "db": "sra",
+      "query": "(\"Arabidopsis thaliana\"[Organism]) AND (hypoxia AND (\"single nuclei\" OR \"single nucleus\"))"
+    },
+    {
+      "label": "osdr_hypobaric",
+      "repository": "OSDR",
+      "kind": "osdr_search",
+      "query": "hypobaric"
+    },
+    {
+      "label": "osdr_hypobaria",
+      "repository": "OSDR",
+      "kind": "osdr_search",
+      "query": "hypobaria"
+    },
+    {
+      "label": "osdr_low_atmospheric_pressure",
+      "repository": "OSDR",
+      "kind": "osdr_search",
+      "query": "\"low atmospheric pressure\""
+    },
+    {
+      "label": "osdr_exploration_atmosphere",
+      "repository": "OSDR",
+      "kind": "osdr_search",
+      "query": "\"exploration atmosphere\""
+    },
+    {
+      "label": "osdr_arabidopsis_assays",
+      "repository": "OSDR BDAPI",
+      "kind": "direct",
+      "url": "https://visualization.osdr.nasa.gov/biodata/api/v2/query/assays/",
+      "params": {
+        "study.characteristics.organism": "Arabidopsis thaliana",
+        "format": "csv"
+      }
+    },
+    {
+      "label": "biostudies_0",
+      "repository": "BioStudies",
+      "kind": "biostudies",
+      "query": "Arabidopsis AND (hypobaric OR hypobaria)"
+    },
+    {
+      "label": "biostudies_1",
+      "repository": "BioStudies",
+      "kind": "biostudies",
+      "query": "Arabidopsis AND \"low oxygen\""
+    },
+    {
+      "label": "biostudies_2",
+      "repository": "BioStudies",
+      "kind": "biostudies",
+      "query": "Arabidopsis AND \"single nuclei\" AND hypoxia"
+    },
+    {
+      "label": "ena_hypobaria",
+      "repository": "ENA",
+      "kind": "direct",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/search",
+      "params": {
+        "result": "study",
+        "query": "tax_eq(3702) AND (study_title=\"*hypobar*\" OR study_title=\"*atmospheric pressure*\")",
+        "fields": "study_accession,study_title,study_description",
+        "format": "tsv",
+        "limit": 0
+      }
+    },
+    {
+      "label": "pride_pressure",
+      "repository": "PRIDE",
+      "kind": "pride",
+      "query": "Arabidopsis hypobaric"
+    },
+    {
+      "label": "pride_hypoxia",
+      "repository": "PRIDE",
+      "kind": "pride",
+      "query": "Arabidopsis hypoxia"
+    },
+    {
+      "label": "omicsdi_pressure",
+      "repository": "OmicsDI",
+      "kind": "omicsdi",
+      "query": "Arabidopsis AND hypobaric"
+    },
+    {
+      "label": "omicsdi_oxygen",
+      "repository": "OmicsDI",
+      "kind": "omicsdi",
+      "query": "Arabidopsis AND hypoxia AND metabolomics"
+    },
+    {
+      "label": "metabolights_pressure",
+      "repository": "MetaboLights",
+      "kind": "direct",
+      "url": "https://www.ebi.ac.uk/metabolights/ws/studies/search",
+      "params": {
+        "query": "Arabidopsis hypobaric"
+      }
+    },
+    {
+      "label": "workbench_pressure",
+      "repository": "Metabolomics Workbench",
+      "kind": "direct",
+      "url": "https://www.metabolomicsworkbench.org/rest/study/study_title/hypobaric/summary/json"
+    },
+    {
+      "label": "expression_atlas",
+      "repository": "Expression Atlas",
+      "kind": "direct",
+      "url": "https://www.ebi.ac.uk/gxa/json/experiments",
+      "params": {
+        "species": "arabidopsis thaliana"
+      }
+    },
+    {
+      "label": "zenodo_search",
+      "repository": "Zenodo",
+      "kind": "direct",
+      "url": "https://zenodo.org/api/records",
+      "params": {
+        "q": "Arabidopsis AND (hypobaric OR \"low air pressure\")",
+        "size": 100
+      }
+    }
+  ],
+  "max_pages": 20,
+  "page_size": 100
+}

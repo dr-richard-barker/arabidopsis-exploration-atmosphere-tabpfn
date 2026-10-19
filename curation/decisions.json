@@ -1,0 +1,32 @@
+{
+  "version":"0.1.0",
+  "snapshot_date":"2026-10-15",
+  "validation_definition":"Identity, modality, design relevance and public availability established from repository metadata and/or primary source. VALIDATED does not mean matrix QC, complete metadata, adequate power or ready for differential expression.",
+  "super_series":{"GSE87869":["GSE87867","GSE87868"],"GSE87905":["GSE87903","GSE87904"],"GSE14578":["GSE14493","GSE14502"]},
+  "shared_sample_rule":"Keep one GSM identity and all series memberships. Do not merge experiments just because they share a paper or BioProject; do not assume shared arrays are independent replication.",
+  "known_shared_samples":{"GSE87867|GSE87903":18},
+  "sample_metadata_scope":"All GSMs in the four2017 hypobaria subseries and GSE308672; first two representative samples per additional GEO comparator/atlas. No biological measurement tables downloaded.",
+  "manual_exclusions":[
+    {"lead":"ST002201","reason":"Water-by-nitrogen accession multiomics too indirect for pressure/oxygen shortlist","source_url":"https://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&StudyID=ST002201"},
+    {"lead":"PXD039004","reason":"Osmotic/salt root/shoot study, not oxygen/pressure; no need to inventory all stress studies","source_url":"https://www.ebi.ac.uk/pride/archive/projects/PXD039004"},
+    {"lead":"PXD069030","reason":"H2O2/LaCl3 leaf treatment, not atmospheric oxygen or pressure","source_url":"https://www.ebi.ac.uk/pride/archive/projects/PXD069030"},
+    {"lead":"10.25345/C5377651Q","reason":"Photorespiration mutants/fluctuating light; no direct atmospheric manipulation verified","source_url":"https://doi.org/10.25345/C5377651Q"},
+    {"lead":"GSE262840","reason":"Root cell-cycle reference largely redundant with prioritized root atlas; reused samples need deduplication","source_url":"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262840"}
+  ],
+  "coverage_limitations":[
+    "Exploratory targeted search, not a systematic review and not exhaustive absence evidence.",
+    "Initial PRIDE projects keyword endpoint was unfiltered. Corrected search/projects endpoint returned an empty list for two literal combined queries; manual accession discovery recovered relevant adjacent datasets.",
+    "MetaboLights API400, Expression Atlas unavailable, Zenodo API403; Workbench schema needs review. Public pages and OmicsDI supplement but do not establish exhaustive coverage.",
+    "OSDR file API is one-based. Initial page0 false-empty responses were replaced with successful page1 inventories for OSD-134/136.",
+    "GEO query translation broadened one title query to337 hits. Candidate occurrences and UID-level headers are discovery records, not relevance-confirmed studies.",
+    "Plant-specific atlas portals used; human/cancer resources and human/mouse Census not treated as Arabidopsis coverage.",
+    "No exact56.5 kPa/34%O2 Arabidopsis omics or low-pressure-treated single-cell/nucleus experiment verified within searched coverage.",
+    "No direct low-pressure epigenomics, proteomics or sample-matched pressure transcriptome/metabolome established within coverage; independent hypobaria metabolite deposit is not a paired multiomics cohort."
+  ],
+  "corrections":[
+    {"subject":"GSE87868","decision":"All9 sample tissue fields specify Roots; do not infer a shoot group from broad study abstract","source_url":"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM2342100"},
+    {"subject":"GSE87867","decision":"Preserve n1/n2/n4 deposited groups, do not force a balanced three-replicate design","source_url":"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87867"},
+    {"subject":"PXD031138","decision":"Five biological replicates per treatment are documented in protocol; SDRF fraction rows must not replace biological replication","source_url":"https://www.ebi.ac.uk/pride/ws/archive/v3/projects/PXD031138"},
+    {"subject":"Zenodo16536514","decision":"Use v2; retain concept/v1 identifiers as version aliases, not independent experiments","source_url":"https://zenodo.org/records/16536514"}
+  ]
+}

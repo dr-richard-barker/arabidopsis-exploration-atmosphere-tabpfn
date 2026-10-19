@@ -1,0 +1,6 @@
+lead,reason,source_url
+ST002201,Water-by-nitrogen accession multiomics too indirect for pressure/oxygen shortlist,https://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&StudyID=ST002201
+PXD039004,"Osmotic/salt root/shoot study, not oxygen/pressure; no need to inventory all stress studies",https://www.ebi.ac.uk/pride/archive/projects/PXD039004
+PXD069030,"H2O2/LaCl3 leaf treatment, not atmospheric oxygen or pressure",https://www.ebi.ac.uk/pride/archive/projects/PXD069030
+10.25345/C5377651Q,Photorespiration mutants/fluctuating light; no direct atmospheric manipulation verified,https://doi.org/10.25345/C5377651Q
+GSE262840,Root cell-cycle reference largely redundant with prioritized root atlas; reused samples need deduplication,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262840

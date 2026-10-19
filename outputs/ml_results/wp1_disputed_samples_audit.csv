@@ -1,0 +1,5 @@
+gsm_id,series_id,sample_title,geo_title_organ,geo_char_organ_erroneous,raw_cel_filename,cel_inferred_organ,cel_hybridization_batch,cel_replicate_letter,shoot_photosynthetic_marker_log2,root_endodermal_marker_log2,ref_shoot_mean_log2,ref_root_mean_log2,TabPFN_v2_PHE_P_Shoot,TabPFN_v2_PHE_SD,LightGBM_P_Shoot,ElasticNet_P_Shoot,resolved_organ
+GSM2342806,GSE87903,Shoot grown at 75 kPa pressure Replica 1,Shoot,Root,GSM2342806_5411_75_Ashoot_Ferl_ATH1,Shoot,5411,A,8.401,5.845,9.543,6.308,0.99077,0.00236,0.99654,0.97923,Shoot
+GSM2342807,GSE87903,Shoot grown at 75 kPa pressure Replica 2,Shoot,Root,GSM2342807_6827_Ferl_75_A_shoot,Shoot,6827,A,9.012,4.789,9.543,6.308,0.9975,0.00053,0.79786,0.98995,Shoot
+GSM2342808,GSE87903,Shoot grown at 75 kPa pressure Replica 3,Shoot,Root,GSM2342808_5440_Ferl_75_B_shoots_ATHI,Shoot,5440,B,9.458,4.883,9.543,6.308,0.99906,0.00022,0.99654,0.98926,Shoot
+GSM2342809,GSE87903,Shoot grown at 75 kPa pressure Replica 4,Shoot,Root,GSM2342809_5429_Ferl75C_shoots_ATHI,Shoot,5429,C,9.605,4.791,9.543,6.308,0.99888,0.00029,0.99654,0.98987,Shoot

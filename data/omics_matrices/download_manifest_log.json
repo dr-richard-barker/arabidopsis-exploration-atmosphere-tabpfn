@@ -1,0 +1,353 @@
+[
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87867/matrix/GSE87867_series_matrix.txt.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_matrices/GSE87867_series_matrix.txt.gz",
+    "status": "cached",
+    "bytes": 4132040,
+    "sha256": "b8e5b9b253456b7036f11e055867a6e80f9e3062c106002d3c14bf0b4f9ab911"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87868/matrix/GSE87868_series_matrix.txt.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_matrices/GSE87868_series_matrix.txt.gz",
+    "status": "cached",
+    "bytes": 962005,
+    "sha256": "a82f16e90211559dba05ba5ce490c21009af6a275ed7ef0ccf0376225f9a40ee"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87903/matrix/GSE87903_series_matrix.txt.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_matrices/GSE87903_series_matrix.txt.gz",
+    "status": "cached",
+    "bytes": 4258677,
+    "sha256": "54ad056395b6b36d6b144b9e353af4e9e1e8d41bc682479d6c6d87c8af419ea1"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87904/matrix/GSE87904_series_matrix.txt.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_matrices/GSE87904_series_matrix.txt.gz",
+    "status": "cached",
+    "bytes": 6967123,
+    "sha256": "407b93c69428eabea68896d28949a9d8e667dfe4ce2609210bd15bdd594cd254"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE14nnn/GSE14493/matrix/GSE14493_series_matrix.txt.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_matrices/GSE14493_series_matrix.txt.gz",
+    "status": "cached",
+    "bytes": 2615246,
+    "sha256": "db0c970e0a6b40e7c9ae0807a00888c1a27794f48be74d57f3ba0d69e3c88020"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE14nnn/GSE14502/matrix/GSE14502_series_matrix.txt.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_matrices/GSE14502_series_matrix.txt.gz",
+    "status": "cached",
+    "bytes": 9959588,
+    "sha256": "06dcee6a335d4dd5a4179035d99b9575a779154168d837f1d98af21996b241f8"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE11nnn/GSE11558/matrix/GSE11558_series_matrix.txt.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_matrices/GSE11558_series_matrix.txt.gz",
+    "status": "cached",
+    "bytes": 2443559,
+    "sha256": "cdb6466ec9596bb74c7467d1ad168d66eac89563925e15bf6b669c74fd445972"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE308nnn/GSE308672/matrix/GSE308672_series_matrix.txt.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_matrices/GSE308672_series_matrix.txt.gz",
+    "status": "cached",
+    "bytes": 3980,
+    "sha256": "e36775a447adbb449857f50e5a38986a5c62a96b66544cb8b2c7b30b2569da47"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87867/suppl/GSE87867_RAW.tar",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_raw/GSE87867_RAW.tar",
+    "status": "cached",
+    "bytes": 68239360,
+    "sha256": "940c8566058c1165f1c4ec103423f733782d26f3fa2ac0d3dfb4faf6f024f428"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87868/suppl/GSE87868_RAW.tar",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_raw/GSE87868_RAW.tar",
+    "status": "cached",
+    "bytes": 15564800,
+    "sha256": "862e94f6e63ffff2c18df25855df3168b25b04b135cc522d42f1844d1ae73616"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87903/suppl/GSE87903_RAW.tar",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/geo_raw/GSE87903_RAW.tar",
+    "status": "cached",
+    "bytes": 72314880,
+    "sha256": "70a3f6f31b973822d30a3585e68e6f8aa4604fa2f6750becd9c8546b55144361"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251057/suppl/GSM9251057_Wt.Normoxic.1.barcodes.tsv.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251057_Wt.Normoxic.1.barcodes.tsv.gz",
+    "status": "downloaded",
+    "bytes": 57640,
+    "sha256": "75583965a684c0b0ec3c4e606bea7a03fd511941c3ff9e607b9cd284d90cced5"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251057/suppl/GSM9251057_Wt.Normoxic.1.genes.tsv.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251057_Wt.Normoxic.1.genes.tsv.gz",
+    "status": "downloaded",
+    "bytes": 131536,
+    "sha256": "662b51e97b712e0fe8c67f254a1cb84ec3aa854ebd32b53db12caf690e17937e"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251057/suppl/GSM9251057_Wt.Normoxic.1.matrix.mtx.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251057_Wt.Normoxic.1.matrix.mtx.gz",
+    "status": "downloaded",
+    "bytes": 66131771,
+    "sha256": "d337481c2ffbaa464c37105b238c5d9744e67d462ee36f670ffef08426938a3e"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251058/suppl/GSM9251058_Wt.Normoxic.2.barcodes.tsv.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251058_Wt.Normoxic.2.barcodes.tsv.gz",
+    "status": "downloaded",
+    "bytes": 53704,
+    "sha256": "e5bd7b13fb379006b91f6a66d21a2bb52ff6071756e4ae1c746c9ea1a9649850"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251058/suppl/GSM9251058_Wt.Normoxic.2.genes.tsv.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251058_Wt.Normoxic.2.genes.tsv.gz",
+    "status": "downloaded",
+    "bytes": 131441,
+    "sha256": "d8039a888a81f6077e8d289861ddc56d81b1d65879dc9e79d29d17f064676975"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251058/suppl/GSM9251058_Wt.Normoxic.2.matrix.mtx.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251058_Wt.Normoxic.2.matrix.mtx.gz",
+    "status": "downloaded",
+    "bytes": 62754949,
+    "sha256": "7c786f7f13ca9194b14375ad420c0e4ef09e77c8226fda99046e0e99cc01e9d8"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251059/suppl/GSM9251059_Wt.Hypoxic.1.barcodes.tsv.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251059_Wt.Hypoxic.1.barcodes.tsv.gz",
+    "status": "downloaded",
+    "bytes": 45887,
+    "sha256": "678b02f8c0e9c49282aef0bc7b02e271d148f88c35090475852491f59467cb00"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251059/suppl/GSM9251059_Wt.Hypoxic.1.genes.tsv.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251059_Wt.Hypoxic.1.genes.tsv.gz",
+    "status": "downloaded",
+    "bytes": 130143,
+    "sha256": "d8cc15eac3d55cd6fa143c902d7ceed48d2d2cee47dd734632236cc7f4942d03"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251059/suppl/GSM9251059_Wt.Hypoxic.1.matrix.mtx.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251059_Wt.Hypoxic.1.matrix.mtx.gz",
+    "status": "downloaded",
+    "bytes": 63381601,
+    "sha256": "12873cda0eb18ac8c435a92923b42a5c91a5b61e37a499d3238f21e806aec0a4"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251060/suppl/GSM9251060_Wt.Hypoxic.2.barcodes.tsv.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251060_Wt.Hypoxic.2.barcodes.tsv.gz",
+    "status": "downloaded",
+    "bytes": 48197,
+    "sha256": "794773de8e9c017e0514570259b57e8b3246ce8febf73094c907611d0f9d9775"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251060/suppl/GSM9251060_Wt.Hypoxic.2.genes.tsv.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251060_Wt.Hypoxic.2.genes.tsv.gz",
+    "status": "downloaded",
+    "bytes": 130887,
+    "sha256": "22dfe79a932a6c8ee85e8ec71efe764c6abaa7c6144416f39e88e70dec06fc65"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9251nnn/GSM9251060/suppl/GSM9251060_Wt.Hypoxic.2.matrix.mtx.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_gse308672/GSM9251060_Wt.Hypoxic.2.matrix.mtx.gz",
+    "status": "downloaded",
+    "bytes": 59042205,
+    "sha256": "cfef6844de8c486f51821f4a4a53ba137c6a1cb8caccf5af58e66441af9de0a4"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPLnnn/GPL198/annot/GPL198.annot.gz",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/annotations/GPL198.annot.gz",
+    "status": "cached",
+    "bytes": 1864638,
+    "sha256": "fa42d17908426ae8c971db30175d07997c1a9de14dece9365bb096f9b62a6c87"
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL198&targ=self&form=text&view=full",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/annotations/GPL198_full.soft",
+    "status": "cached",
+    "bytes": 22486094,
+    "sha256": "bb6f57b24a3f9e9bf809599c75bcb2fdea2cd7659a866e5605bdc8f807c65766"
+  },
+  {
+    "url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-136/download?source=datamanager&file=GLDS-136_array_SampleTable_GLmicroarray.csv",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/osdr/GLDS-136_array_SampleTable_GLmicroarray.csv",
+    "status": "cached",
+    "bytes": 563,
+    "sha256": "048fb074f5f7e6fcd0dc92bc978919513af397904669a3fd5bf37c8ea3fd43db"
+  },
+  {
+    "url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-136/download?source=datamanager&file=GLDS-136_array_contrasts_GLmicroarray.csv",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/osdr/GLDS-136_array_contrasts_GLmicroarray.csv",
+    "status": "cached",
+    "bytes": 583,
+    "sha256": "bd632ef2e19d7a45887462e507c3b807c0176b4291ea981d447a4309742b5334"
+  },
+  {
+    "url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-136/download?source=datamanager&file=GLDS-136_array_differential_expression_GLmicroarray.csv",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/osdr/GLDS-136_array_differential_expression_GLmicroarray.csv",
+    "status": "cached",
+    "bytes": 24321308,
+    "sha256": "40ee4ca101c96e75e3bea9b11023ecb6a640a27505e45ba132015de56b70c321"
+  },
+  {
+    "url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-136/download?source=datamanager&file=GLDS-136_array_normalized_expression_probeset_GLmicroarray.csv",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/osdr/GLDS-136_array_normalized_expression_probeset_GLmicroarray.csv",
+    "status": "cached",
+    "bytes": 10310640,
+    "sha256": "82b15ebcef1ac4211374b7724a1d9f2a9255de2c752bf5bce4625963bce23aac"
+  },
+  {
+    "url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-136/download?source=datamanager&file=GLDS-136_array_microarray_v0_runsheet.csv",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/osdr/GLDS-136_array_microarray_v0_runsheet.csv",
+    "status": "cached",
+    "bytes": 5564,
+    "sha256": "4c4ff4c15de3add92e81872f79d548bb33317e9b2b78f2ace4ee03402865b835"
+  },
+  {
+    "url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-136/download?source=datamanager&file=OSD-136_metadata_GSE87868-ISA.zip",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/osdr/OSD-136_metadata_GSE87868-ISA.zip",
+    "status": "cached",
+    "bytes": 27012,
+    "sha256": "d89ae5155254ef28dd3b6dba67dd353823a40846bb4b0649ed20ca05ed6dea60"
+  },
+  {
+    "url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-134/download?source=datamanager&file=OSD-134_metadata_OSD-134-ISA.zip",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/osdr/OSD-134_metadata_OSD-134-ISA.zip",
+    "status": "cached",
+    "bytes": 52091,
+    "sha256": "f66e84f62887b147e204ab5b44c1ec16afd7dcd5b766d9ad7dea10a2a003bb6c"
+  },
+  {
+    "url": "https://zenodo.org/records/16536514/files/Chlorophyll%20fluorescence%20parameters.xlsx?download=1",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/zenodo_16536514/Chlorophyll_fluorescence_parameters.xlsx",
+    "status": "cached",
+    "bytes": 66491,
+    "sha256": "1b0b8d4df9f2bf3c1690d91245422a39c9bcc51382d55f61d307d2421f973410"
+  },
+  {
+    "url": "https://zenodo.org/records/16536514/files/Ecotron_CO2_1_min_values.xlsx?download=1",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/zenodo_16536514/Ecotron_CO2_1_min_values.xlsx",
+    "status": "cached",
+    "bytes": 488047,
+    "sha256": "54411356d214d4da3e857157c14223d4037c1ecd2b7cc70dfbb089d4cd943d22"
+  },
+  {
+    "url": "https://zenodo.org/records/16536514/files/Gas%20exchange%20data.xlsx?download=1",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/zenodo_16536514/Gas_exchange_data.xlsx",
+    "status": "cached",
+    "bytes": 42608,
+    "sha256": "b74f8a665092d9462c3c67d667fe94aa45ed90f1f7db4019cc35239eca00f6c5"
+  },
+  {
+    "url": "https://zenodo.org/records/16536514/files/Metabolites%20identification.xlsx?download=1",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/zenodo_16536514/Metabolites_identification.xlsx",
+    "status": "cached",
+    "bytes": 38585,
+    "sha256": "2384fead1809816ababf255ec37e808adc3df1bfd4d877a1e02291bcd7eae4db"
+  },
+  {
+    "url": "https://zenodo.org/records/16536514/files/Nitrogen%20content%20and%20d13C.xlsx?download=1",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/zenodo_16536514/Nitrogen_content_and_d13C.xlsx",
+    "status": "cached",
+    "bytes": 18126,
+    "sha256": "c12ab52da4b52b37b40518629b4f8416a339f3c5926d05955d705ca59b5902fe"
+  },
+  {
+    "url": "https://zenodo.org/records/16536514/files/growth_measurements_arabidopsis.xlsx?download=1",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/zenodo_16536514/growth_measurements_arabidopsis.xlsx",
+    "status": "cached",
+    "bytes": 30100,
+    "sha256": "c75a8f431447fcfed271a1978b01d44591c55d132058828d5a69b35d60bc239f"
+  },
+  {
+    "url": "https://zenodo.org/records/16536514/files/leaves%20pigments.xlsx?download=1",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/zenodo_16536514/leaves_pigments.xlsx",
+    "status": "cached",
+    "bytes": 15380,
+    "sha256": "7104ae51eb6b72af89ea76b350ebecf2fc9cca9a9d8c4ce438cc8317377529b1"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE308nnn/GSE308672/suppl/GSE308672_RAW.tar",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_GSE308672/GSE308672_RAW.tar",
+    "status": "skipped_large",
+    "bytes": 252057600
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC12917472/unicode",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/snrnaseq_GSE308672/PMC12917472_bioc.json",
+    "status": "http_503",
+    "bytes": 0
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC5385329/unicode",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/literature_bioc/PMC5385329_Zhou2017_fpls.json",
+    "status": "http_503",
+    "bytes": 0
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC5553264/unicode",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/literature_bioc/PMC5553264_Zhou2017_aobpla.json",
+    "status": "http_503",
+    "bytes": 0
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC8825464/unicode",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/literature_bioc/PMC8825464_Apelt2022_atlas.json",
+    "status": "http_503",
+    "bytes": 0
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC2690036/unicode",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/literature_bioc/PMC2690036_Mustroph2009_TRAP.json",
+    "status": "http_503",
+    "bytes": 0
+  },
+  {
+    "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2016/04/PXD002353/07152013A520SHIHbatch1.xlsx",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/proteomics/PXD002353_batch1.xlsx",
+    "status": "cached",
+    "bytes": 1655914,
+    "sha256": "e6789f155748d8befdebebae1a5c04d04a3952727875f86f21d33c64c92f3203"
+  },
+  {
+    "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2016/04/PXD002353/07152013A520SHIHbatch2.xlsx",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/proteomics/PXD002353_batch2.xlsx",
+    "status": "cached",
+    "bytes": 1886228,
+    "sha256": "c8d2beb90c2151783a5c0bdf0252ffbdefa556629e22cdeccaed53cb1809175b"
+  },
+  {
+    "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2016/04/PXD002353/07182013A520SHIHbatch3.xlsx",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/proteomics/PXD002353_batch3.xlsx",
+    "status": "cached",
+    "bytes": 2090333,
+    "sha256": "b667431133a78fd9f9278a822789ca9ba573c28e03baf44fcaa9bb9564a8085c"
+  },
+  {
+    "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2016/04/PXD001815/PXD001815_community_annotated.sdrf.tsv",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/proteomics/PXD001815.sdrf.tsv",
+    "status": "cached",
+    "bytes": 6545,
+    "sha256": "89df67153db032f4c1677cb71d628c664cbff848460d4dbe5014d968970930a2"
+  },
+  {
+    "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2016/04/PXD002353/PXD002353_community_annotated.sdrf.tsv",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/proteomics/PXD002353.sdrf.tsv",
+    "status": "cached",
+    "bytes": 3355,
+    "sha256": "e91a04f87bbe4a4204fa9652cd243c8fc933fe7bfb800fda3e155c8f392733d8"
+  },
+  {
+    "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/12/PXD031138/PXD031138_community_annotated.sdrf.tsv",
+    "file": "arabidopsis_exploration_atmosphere/data/omics_matrices/proteomics/PXD031138.sdrf.tsv",
+    "status": "cached",
+    "bytes": 6726,
+    "sha256": "560fe36c0e61ca0e53f0f588d8b9fd90c5047d9a3f2332ef859cce7b7ce3dd24"
+  }
+]

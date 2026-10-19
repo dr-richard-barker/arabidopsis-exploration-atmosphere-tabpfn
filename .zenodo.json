@@ -1,0 +1,18 @@
+{
+  "title":"Arabidopsis exploration-atmosphere omics: curated metadata catalog and feasibility audit",
+  "upload_type":"dataset",
+  "description":"Version 0.1.0 public metadata catalog and feasibility audit for Arabidopsis low-pressure and oxygen-related omics, treated single-nucleus comparators and reference-atlas suitability. Original documentation and catalog annotations: CC BY 4.0. Supporting original Python software: MIT (explicit code exception; see LICENSE). Third-party records and underlying data retain source rights. Includes factual metadata extracts, CSV inventories, reports, code, tests and reproducibility instructions; no biological measurement files. No exact nominal NASA-mixture dataset is verified within searched coverage. This file does not upload, publish or reserve a DOI.",
+  "creators":[{"name":"Barker, Richard John"}],
+  "access_right":"open",
+  "license":"cc-by-4.0",
+  "version":"0.1.0",
+  "publication_date":"2026-10-16",
+  "keywords":["Arabidopsis thaliana","hypobaria","exploration atmosphere","oxygen","omics","single-nucleus RNA-seq","metadata"],
+  "related_identifiers":[
+    {"identifier":"10.3389/fpls.2017.00528","relation":"references","scheme":"doi"},
+    {"identifier":"10.1093/aobpla/plx030","relation":"references","scheme":"doi"},
+    {"identifier":"10.5281/zenodo.16536514","relation":"references","scheme":"doi"},
+    {"identifier":"10.1111/nph.70874","relation":"references","scheme":"doi"},
+    {"identifier":"10.1038/s41477-025-02072-z","relation":"references","scheme":"doi"}
+  ]
+}
