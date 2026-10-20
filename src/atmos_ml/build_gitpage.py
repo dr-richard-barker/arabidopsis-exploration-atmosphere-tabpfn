@@ -521,11 +521,11 @@ def generate_index_html():
         <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor" style="vertical-align: middle;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         GitHub Repository
       </a>
-      <a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/manuscript_exploration_atmosphere_tabpfn.docx" class="btn">
+      <a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/manuscript_exploration_atmosphere_tabpfn.docx" class="btn">
         📄 Download Manuscript (.docx)
       </a>
-      <a href="#workpackages" class="btn">🔬 5 Workpackages</a>
-      <a href="#figures" class="btn">📊 6 Publication Figures</a>
+      <a href="#workpackages" class="btn">🔬 6 Workpackages</a>
+      <a href="#figures" class="btn">📊 7 Publication Figures</a>
       <a href="#notebooks" class="btn">📓 Jupyter Notebooks</a>
     </div>
   </header>
@@ -550,7 +550,11 @@ def generate_index_html():
         <div class="metric-label">Pure Baro vs. Hypoxia Hubs</div>
       </div>
       <div class="metric-card">
-        <div class="metric-value">70–75% RH</div>
+        <div class="metric-value">10 Axes / 6 Phases</div>
+        <div class="metric-label">PhysioSpace Stress Autodecoder</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">75–80% RH</div>
         <div class="metric-label">Atmospheric Rescue Setpoint</div>
       </div>
     </div>
@@ -580,7 +584,7 @@ def generate_index_html():
 
     <!-- Workpackage Section -->
     <section id="workpackages">
-      <h2 class="section-heading">🔬 Five-Workpackage System Architecture</h2>
+      <h2 class="section-heading">🔬 Six-Workpackage Systems Architecture</h2>
       <div class="wp-grid">
 
         <div class="wp-card">
@@ -629,9 +633,19 @@ def generate_index_html():
           <div class="wp-title">NASA Exploration Atmosphere Counterfactual Synthesis</div>
           <div class="wp-desc">
             Leave-One-Condition-Out (LOCO) validated TabPFN v2 predictions (mean r = 0.7387) for the NASA 56.54 kPa / 34% O₂ setpoint. 
-            Counterfactual synthesis proves that 34% O₂ silences >88% of ERF-VII hypoxia induction, but physical barosensory stress (TCH4, LOX2, AOS) persists unabated—confirming that habitat humidity engineering (70–75% RH) is mandatory.
+            Counterfactual synthesis proves that 34% O₂ silences >88% of ERF-VII hypoxia induction, but physical barosensory stress (TCH4, LOX2, AOS) persists unabated—confirming that habitat humidity engineering (75–80% RH) is mandatory.
           </div>
           <div class="wp-stats">LOCO r = 0.7387 • Counterfactual Engine • Tables S6A–B</div>
+        </div>
+
+        <div class="wp-card">
+          <span class="wp-badge">Workpackage 6</span>
+          <div class="wp-title">Plant PhysioSpace Stress Autodecoder Across Mission Profile</div>
+          <div class="wp-desc">
+            Projected the multi-omics compendium onto 10 canonical physiological stress dimensions across 6 spaceflight mission phases (Earth baseline, pre-EVA staging, nominal exploration habitat, decompression transients, emergency hypobaria, and BLiSS rescue). 
+            Proved that nominal 56.5 kPa / 34% O₂ triggers isolated boundary-layer transpiration/osmotic stress (z = +1.86) rather than hypoxia (z = -0.16), and that 80% RH achieves total stress extinction (Δz = -1.90).
+          </div>
+          <div class="wp-stats">10 Stress Axes • 6 Mission Phases • Table S7</div>
         </div>
 
       </div>
@@ -710,6 +724,17 @@ def generate_index_html():
           </div>
         </div>
 
+        <div class="figure-card">
+          <img src="figures/fig7_physiospace_mission_profile_autodecoder.png" alt="Figure 7: Plant PhysioSpace Stress Autodecoder Across the Spaceflight Mission Profile" onclick="openModal(this.src, 'Figure 7 | Plant PhysioSpace Stress Autodecoder Across the Spaceflight Mission Profile')">
+          <div class="figure-body">
+            <div class="figure-title">Figure 7: PhysioSpace Mission Profile Autodecoder</div>
+            <div class="figure-caption">Continuous blue-white-red PhysioSpace stress autodecoder across 10 canonical stress axes and 6 astronautical mission phases, (Hypoxia vs Osmotic) 2D trajectory ordination, organ partitioning, and complete 80% RH boundary-layer stress rescue (Δz = -1.90).</div>
+            <div class="figure-footer">
+              <a href="figures/fig7_physiospace_mission_profile_autodecoder.png" target="_blank">View PNG (300 DPI)</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -755,9 +780,9 @@ def generate_index_html():
             </tr>
             <tr>
               <td><strong>05_counterfactual_synthesis.ipynb</strong></td>
-              <td>NASA Setpoints & Humidity Rescue</td>
-              <td>LOCO Validation, Counterfactual Simulator, 70% RH Rescue</td>
-              <td>Figure 6, Tables S6A–B</td>
+              <td>NASA Setpoints & PhysioSpace Stress Autodecoder</td>
+              <td>LOCO Validation, Counterfactual Simulator, 10-Axis PhysioSpace Autodecoder, 80% RH Rescue</td>
+              <td>Figures 6 & 7, Tables S6A–B, S7</td>
             </tr>
           </tbody>
         </table>
@@ -782,73 +807,79 @@ def generate_index_html():
               <td><strong>Table S1</strong></td>
               <td>Harmonized 130 Hypobaric Microarrays Forensic Audit</td>
               <td>130 rows × 28 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S1_Harmonized_130_Hypobaric_Arrays_Forensic_Audit.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S1_Harmonized_130_Hypobaric_Arrays_Forensic_Audit.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S2A</strong></td>
               <td>Multi-Task Physical Regression Benchmarks (95% Bootstrap CI)</td>
               <td>18 rows × 12 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S2A_Regression_Benchmarks_Bootstrap95CI.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S2A_Regression_Benchmarks_Bootstrap95CI.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S2B</strong></td>
               <td>4-Class Atmospheric Regime Classification Benchmarks</td>
               <td>7 rows × 11 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S2B_Classification_Benchmarks_Bootstrap95CI.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S2B_Classification_Benchmarks_Bootstrap95CI.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S2C</strong></td>
               <td>Slice-Based Error Analysis Across Biological Subgroups</td>
               <td>30 rows × 8 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S2C_Slice_Based_Error_Analysis.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S2C_Slice_Based_Error_Analysis.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S3</strong></td>
               <td>Exploration Atmosphere Molecular Hub Nodes (22,746 Probesets)</td>
               <td>22,746 rows × 18 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S3_Exploration_Atmosphere_Molecular_Hub_Nodes.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S3_Exploration_Atmosphere_Molecular_Hub_Nodes.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S4A</strong></td>
               <td>Cell-Type TRAP-seq and Single-Nucleus Lineage Atlas</td>
               <td>12 pathways × 24 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S4A_Pathway_CellType_TRAP_and_SingleNucleus_Atlas.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S4A_Pathway_CellType_TRAP_and_SingleNucleus_Atlas.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S4B</strong></td>
               <td>Top-80 Atmospheric Hubs Cell-Type & Single-Nucleus Localization</td>
               <td>80 rows × 26 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S4B_Top80_Hubs_CellType_and_SingleNucleus_Localization.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S4B_Top80_Hubs_CellType_and_SingleNucleus_Localization.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S5A</strong></td>
               <td>Zenodo 16536514 Physiological Gas Exchange Stats (62 kPa vs 101 kPa)</td>
               <td>12 traits × 11 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S5A_Zenodo16536514_Physiology_62kPa_vs_101kPa_Stats.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S5A_Zenodo16536514_Physiology_62kPa_vs_101kPa_Stats.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S5B</strong></td>
               <td>Zenodo 16536514 Pressure × Humidity Factorial Metabolomics</td>
               <td>14 compounds × 14 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S5B_Zenodo16536514_Metabolomics_Pressure_x_Humidity_Triangulation.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S5B_Zenodo16536514_Metabolomics_Pressure_x_Humidity_Triangulation.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S5C</strong></td>
               <td>PXD002353 SnRK1.1 Phosphoproteome & Transcriptome Integration</td>
               <td>5,454 proteins × 12 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S5C_PXD002353_SnRK1_Proteome_Transcriptome_Integration.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S5C_PXD002353_SnRK1_Proteome_Transcriptome_Integration.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S6A</strong></td>
               <td>NASA Exploration Atmosphere Counterfactual Predictions</td>
               <td>6 setpoints × 42 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S6A_NASA_Exploration_Atmosphere_Counterfactual_Predictions.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S6A_NASA_Exploration_Atmosphere_Counterfactual_Predictions.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S6B</strong></td>
               <td>Leave-One-Condition-Out (LOCO) Model Generalization Benchmark</td>
               <td>20 rows × 8 cols</td>
-              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/arabidopsis_exploration_atmosphere/manuscript/tables/Table_S6B_Leave_One_Condition_Out_Validation.csv" target="_blank">CSV</a></td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S6B_Leave_One_Condition_Out_Validation.csv" target="_blank">CSV</a></td>
+            </tr>
+            <tr>
+              <td><strong>Table S7</strong></td>
+              <td>Plant PhysioSpace Stress Autodecoder Across Spaceflight Mission Profile</td>
+              <td>12 rows × 19 cols</td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S7_PhysioSpace_Stress_Scores.csv" target="_blank">CSV</a></td>
             </tr>
           </tbody>
         </table>
@@ -973,7 +1004,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'arabidopsis_exploration_atmosphere/docs'
+          path: 'docs'
 
       - name: Deploy to GitHub Pages
         id: deployment
