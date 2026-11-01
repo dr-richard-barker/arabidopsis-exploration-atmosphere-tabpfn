@@ -22,6 +22,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import seaborn as sns
+from sklearn.metrics import confusion_matrix
 
 PROJECT_DIR = WORKSPACE / "arabidopsis_exploration_atmosphere"
 TABLES_DIR = PROJECT_DIR / "manuscript" / "tables"
@@ -247,7 +248,7 @@ def make_fig2_decoupling():
     fig = plt.figure(figsize=(16.2, 11.4))
     gs = gridspec.GridSpec(2, 2, hspace=0.38, wspace=0.38)
 
-    # Panel A: Hypobaria Index & Hypoxia Index R2 Benchmark across Models
+    # Panel A: Continuous Regression Performance Benchmark across Models
     axA = fig.add_subplot(gs[0, 0])
     sub_b = reg_bench[reg_bench["Task"].str.startswith("WP2A_") & (reg_bench["model"] != "Dummy (Mean Baseline)")].copy()
     sub_h = reg_bench[reg_bench["Task"].str.startswith("WP2B_") & (reg_bench["model"] != "Dummy (Mean Baseline)")].copy()
@@ -270,88 +271,78 @@ def make_fig2_decoupling():
     axA.set_yticklabels(models_order)
     axA.invert_yaxis()
     axA.set_xlabel("Out-of-Fold Cross-Validation $R^2$ (with 95% Bootstrap CI)")
-    axA.set_title("A. Multi-Task Physical Regression Benchmark (n = 58 24-h Arrays)", loc="left")
+    axA.set_title("A. Continuous Physical Regression Benchmark (n = 58 24-h Arrays)", loc="left")
     axA.set_xlim(0, 1.05)
-    axA.set_ylim(len(models_order) - 0.4 + 0.9, -0.6)  # headroom below MLP row for the legend
+    axA.set_ylim(len(models_order) - 0.4 + 0.9, -0.6)
     axA.legend(loc="lower right", frameon=True, fontsize=8.0)
     axA.grid(True, axis="x", alpha=0.25)
 
-    # Panel B: 4-Class Atmospheric Regime Classification Benchmark
+    # Panel B: True Predicted vs Observed Scatter Plot for Hypobaria Index (1:1 line)
     axB = fig.add_subplot(gs[0, 1])
-    clf_sub = clf_bench[clf_bench["model"] != "Dummy (Naive Baseline)"].copy()
-    x_pos = np.arange(len(clf_sub))
-    w = 0.26
-    axB.bar(x_pos - w, clf_sub["ROC_AUC"], w, label="Macro ROC-AUC", color="#8e44ad")
-    axB.bar(x_pos, clf_sub["PR_AUC"], w, label="Macro PR-AUC", color="#16a085")
-    axB.bar(x_pos + w, clf_sub["Macro_F1"], w, label="Macro F1 Score", color="#c0392b")
-    axB.set_xticks(x_pos)
-    axB.set_xticklabels(clf_sub["model"])
-    _anchor_xticks(axB, rotation=24, fontsize=8.3)
-    axB.set_ylim(0.4, 1.08)
-    axB.set_yticks(np.arange(0.4, 1.01, 0.1))
-    axB.set_ylabel("Out-of-Fold Score")
-    axB.set_title("B. 4-Class Mechanistic Atmospheric Regime Classification", loc="left")
-    axB.legend(loc="upper center", frameon=True, ncol=3, fontsize=8.0)
-    axB.grid(True, axis="y", alpha=0.25)
-
-    # Panel C: Out-of-Fold TabPFN v2 (PHE) Predicted vs Observed Hypobaria & Hypoxia Indices
-    axC = fig.add_subplot(gs[1, 0])
     reg_colors = {
         0: ("#2c3e50", "Control Normoxia (97 kPa)"),
-        1: ("#27ae60", "Pure Hypobaria + Normoxic O$_2$ (50/25 kPa + O$_2$)"),
-        2: ("#2980b9", "Moderate Combined Hypobaria (75/50 kPa Air)"),
-        3: ("#c0392b", "Severe Hypoxia / Hypobaria (25/10/5 kPa, 5.1 kPa O$_2$)"),
+        1: ("#27ae60", "Pure Hypobaria + Normoxic O$_2$ (50/25 kPa)"),
+        2: ("#2980b9", "Moderate Hypobaria (75/50 kPa Air)"),
+        3: ("#c0392b", "Severe Hypoxia / Hypobaria (25/10/5 kPa)"),
     }
     for c_id, (col, lbl) in reg_colors.items():
         sub = oof_58[oof_58["true_regime_4class"] == c_id]
-        axC.scatter(sub["pred_baro_TabPFN v2 (PHE)"], sub["pred_hypo_TabPFN v2 (PHE)"],
+        axB.scatter(sub["hypobaria_index"], sub["pred_baro_TabPFN v2 (PHE)"],
                     c=col, s=75, alpha=0.88, edgecolor="black", lw=0.7, label=lbl, zorder=4)
-    axC.axhline(0.28, linestyle="--", color="#7f8c8d", lw=1.0)
-    axC.axvline(0.32, linestyle="--", color="#7f8c8d", lw=1.0)
+    # 1:1 line
+    lims_b = [-0.1, 4.4]
+    axB.plot(lims_b, lims_b, "--", color="#7f8c8d", lw=1.2, label="1:1 Perfect Prediction")
+    axB.set_xlim(lims_b)
+    axB.set_ylim(lims_b)
+    axB.set_xlabel("Observed Hypobaria Index $y = \\log_2(97/P_{\\mathrm{total}})$")
+    axB.set_ylabel("TabPFN v2 (PHE) Predicted Index $\\hat{y}$")
+    axB.set_title("B. Predicted vs Observed: Total Barometric Pressure (n = 58)", loc="left")
+    axB.text(0.1, 3.9, "TabPFN v2 (PHE) $R^2 = 0.6630$\nSpearman $\\rho = 0.6380$\n(Full $n=130$ compendium $R^2 = 0.9134$)",
+             fontsize=8.0, bbox=dict(boxstyle="round,pad=0.3", fc="#f8fafc", ec="#cbd5e1"))
+    axB.legend(loc="lower right", frameon=True, fontsize=7.2)
+    axB.grid(True, alpha=0.25)
 
-    # Place callouts in clean whitespace with arrows pointing to clusters
-    axC.annotate(
-        "Normoxic Hypobaria Zone\n(Barosensory Active, Hypoxia Silent)",
-        xy=(1.55, 0.01), xytext=(2.85, 0.22),
-        fontsize=7.8, fontweight="bold", color="#16a085", ha="center",
-        bbox=dict(boxstyle="round,pad=0.25", fc="#ecf9f6", ec="#16a085", lw=0.8),
-        arrowprops=dict(arrowstyle="->", color="#16a085", lw=1.1),
-    )
-    axC.annotate(
-        "Normobaric Hypoxia\n(97 kPa, 5.1 kPa O$_2$)",
-        xy=(0.06, 2.00), xytext=(-0.08, 3.05),
-        fontsize=7.8, fontweight="bold", color="#8e44ad", ha="left",
-        bbox=dict(boxstyle="round,pad=0.25", fc="#f5eef8", ec="#8e44ad", lw=0.8),
-        arrowprops=dict(arrowstyle="->", color="#8e44ad", lw=1.1),
-    )
-    axC.set_xlim(-0.15, 4.55)
-    axC.set_ylim(-0.32, 4.55)
-    axC.set_xlabel("TabPFN v2 Out-of-Fold Predicted Hypobaria Index $\\hat{y}_{\\mathrm{baro}} = \\log_2(97/P_{\\mathrm{total}})$")
-    axC.set_ylabel("TabPFN v2 Out-of-Fold Predicted Hypoxia Index $\\hat{y}_{\\mathrm{hypo}} = \\log_2(20.4/p\\mathrm{O}_2)$")
-    axC.set_title("C. Out-of-Fold 2D Atmospheric Decoupling by TabPFN v2 (PHE)", loc="left")
-    axC.legend(loc="upper left", frameon=True, fontsize=7.4)
+    # Panel C: True Predicted vs Observed Scatter Plot for Hypoxia Index (1:1 line)
+    axC = fig.add_subplot(gs[1, 0])
+    for c_id, (col, lbl) in reg_colors.items():
+        sub = oof_58[oof_58["true_regime_4class"] == c_id]
+        axC.scatter(sub["hypoxia_index"], sub["pred_hypo_TabPFN v2 (PHE)"],
+                    c=col, s=75, alpha=0.88, edgecolor="black", lw=0.7, label=lbl, zorder=4)
+    lims_h = [-0.1, 4.4]
+    axC.plot(lims_h, lims_h, "--", color="#7f8c8d", lw=1.2, label="1:1 Perfect Prediction")
+    axC.set_xlim(lims_h)
+    axC.set_ylim(lims_h)
+    axC.set_xlabel("Observed Hypoxia Index $y = \\log_2(20.4/p\\mathrm{O}_2)$")
+    axC.set_ylabel("TabPFN v2 (PHE) Predicted Index $\\hat{y}$")
+    axC.set_title("C. Predicted vs Observed: Oxygen Partial Pressure (n = 58)", loc="left")
+    axC.text(0.1, 3.9, "TabPFN v2 (PHE) $R^2 = 0.9733$\nSpearman $\\rho = 0.9121$\nRMSE = 0.2289 $\\log_2$ units",
+             fontsize=8.0, bbox=dict(boxstyle="round,pad=0.3", fc="#f8fafc", ec="#cbd5e1"))
+    axC.legend(loc="lower right", frameon=True, fontsize=7.2)
     axC.grid(True, alpha=0.25)
 
-    # Panel D: Slice-Based Error Analysis (Hypobaria RMSE across Biological Subgroups)
+    # Panel D: Out-of-Fold 4-Class Regime Classification Confusion Matrix (Heatmap)
     axD = fig.add_subplot(gs[1, 1])
-    piv = slice_df.pivot(index="Slice", columns="Model", values="Hypobaria_RMSE")[
-        ["TabPFN v2 (PHE)", "TabPFN v2", "LightGBM", "RandomForest", "ElasticNet"]
+    cm = confusion_matrix(oof_58["true_regime_4class"].values, oof_58["pred_regime_TabPFN v2 (PHE)"].values)
+    short_regime_labels = [
+        "Control (97 kPa)\n[n=9]",
+        "Pure Hypobaria+O2\n[n=13]",
+        "Moderate Hypobaria\n[n=16]",
+        "Severe Hypoxia\n[n=20]",
     ]
-    short_slice_map = {
-        "Age: 10/11-day Root & Shoot (n=49)": "10/11d Root & Shoot\n(n=49)",
-        "Age: 5-day Root (GSE87868, n=9)": "5d Young Root\n(OSD-136, n=9)",
-        "Organ: Root (n=31)": "Organ: Root\n(n=31)",
-        "Organ: Shoot (n=27)": "Organ: Shoot\n(n=27)",
-        "Regime: Normoxic O2 Supplemented (50/25 kPa + O2, n=13)": "Normoxic O2 Supp.\n(50/25 kPa+O2, n=13)",
-        "Regime: Unsupplemented Air / Hypoxia (n=45)": "Unsupplemented Air\n(n=45)",
-    }
-    piv.index = [short_slice_map.get(s, s) for s in piv.index]
-    sns.heatmap(piv, annot=True, fmt=".3f", cmap="YlOrRd", cbar_kws={"label": "Out-of-Fold RMSE ($\\log_2$ pressure units)"}, ax=axD, linewidths=0.8)
-    axD.set_title("D. Slice-Based Error Analysis Across Biological Subgroups", loc="left")
-    axD.set_xlabel("")
-    axD.set_ylabel("")
-    _anchor_xticks(axD, rotation=24, fontsize=8.3)
+    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", cbar=False,
+                xticklabels=short_regime_labels, yticklabels=short_regime_labels, ax=axD,
+                annot_kws={"size": 11, "weight": "bold"})
+    axD.set_xlabel("TabPFN v2 (PHE) Out-of-Fold Predicted Regime")
+    axD.set_ylabel("True Experimental Regime")
+    axD.set_title("D. 4-Class Regime Confusion Matrix (Accuracy = 86.21%, AUC = 0.9623)", loc="left")
+    _anchor_xticks(axD, rotation=18, fontsize=8.0)
     axD.tick_params(axis="y", rotation=0, labelsize=8.0)
+
+    fig.suptitle("Figure 2 | TabPFN v2 Decoupling of Total Barometric Pressure from Oxygen Partial Pressure", y=0.98)
+    out_path = FIG_DIR / "fig2_tabpfn_atmospheric_decoupling.png"
+    fig.savefig(out_path, dpi=300)
+    plt.close(fig)
+    print(f"Saved {out_path}")
 
     fig.suptitle("Figure 2 | TabPFN v2 Decouples Barosensory Total Pressure ($P_{\\mathrm{total}}$) from Oxygen Partial Pressure ($p\\mathrm{O}_2$)", y=0.98)
     out_path = FIG_DIR / "fig2_tabpfn_atmospheric_decoupling.png"
@@ -530,7 +521,7 @@ def make_fig4_cellular_atlas():
     mat_sn.index = clean_pws
     mat_sn.columns = clean_sncols
 
-    sns.heatmap(mat_sn, cmap="RdBu_r", center=0.0, vmin=-0.9, vmax=1.2, annot=True, fmt=".2f",
+    sns.heatmap(mat_sn, cmap="RdBu_r", center=0.0, vmin=-0.8, vmax=3.5, annot=True, fmt=".2f",
                 annot_kws={"size": 7.2}, cbar_kws={"label": "snRNA-seq Hypoxia (4% vs 21% O$_2$) $\\Delta\\log_2\\mathrm{CPM}$"},
                 ax=axB, linewidths=0.5)
     axB.set_title("B. Single-Nucleus Root Lineage Hypoxia Trajectories (GSE308672, 5d Col-0)", loc="left")

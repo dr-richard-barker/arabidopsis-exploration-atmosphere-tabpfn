@@ -1,0 +1,5 @@
+Class_ID,Regime_Name,Support_N,Precision,Recall,F1_Score
+0,Normobaric Normoxia (97 kPa),9,0.6667,0.6667,0.6667
+1,Pure Hypobaria + O2 (50/25 kPa),13,0.8333,0.7692,0.8
+2,Moderate Hypobaria (75/50 kPa Air),16,0.8235,0.875,0.8485
+3,Severe Hypoxia / Extreme Hypobaria,20,1.0,1.0,1.0

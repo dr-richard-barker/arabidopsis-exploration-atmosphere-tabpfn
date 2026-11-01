@@ -1,0 +1,5 @@
+,Pred_Normobaric Normoxia (97 kPa),Pred_Pure Hypobaria + O2 (50/25 kPa),Pred_Moderate Hypobaria (75/50 kPa Air),Pred_Severe Hypoxia / Extreme Hypobaria
+True_Normobaric Normoxia (97 kPa),6,2,1,0
+True_Pure Hypobaria + O2 (50/25 kPa),1,10,2,0
+True_Moderate Hypobaria (75/50 kPa Air),2,0,14,0
+True_Severe Hypoxia / Extreme Hypobaria,0,0,0,20

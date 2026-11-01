@@ -521,6 +521,9 @@ def generate_index_html():
         <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor" style="vertical-align: middle;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         GitHub Repository
       </a>
+      <a href="assets/pdf/manuscript_npj_microgravity.pdf" class="btn btn-primary" target="_blank">
+        📑 Download <em>npj Microgravity</em> PDF (15 pp.)
+      </a>
       <a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/manuscript_exploration_atmosphere_tabpfn.docx" class="btn">
         📄 Download Manuscript (.docx)
       </a>
@@ -603,7 +606,7 @@ def generate_index_html():
           <div class="wp-desc">
             Benchmarked TabPFN v2 against LightGBM, Random Forest, ElasticNet, and deep MLP under condition-grouped cross-validation. 
             TabPFN v2 (PHE) achieved R² = 0.9134 on continuous hypobaria regression and ROC-AUC = 0.9623 on 4-class regime classification. 
-            Exact Shapley attributions separated 1,243 Hypoxia hubs from 380 Pure Barosensory hubs (CMI1, STZ, TCH4, LOX2, ACS6).
+            Orthogonal regression with limma moderation separated 1,003 Pure Hypoxia hubs from 380 Pure Barosensory hubs (CMI1, STZ, TCH4, LOX2, ACS6), 21 Additive Dual Hubs, and 12 Interaction Hubs.
           </div>
           <div class="wp-stats">R² = 0.9134 • 380 Barosensory Hubs • Tables S2A–S3</div>
         </div>
@@ -804,14 +807,20 @@ def generate_index_html():
           </thead>
           <tbody>
             <tr>
-              <td><strong>Table S1</strong></td>
+              <td><strong>Table S1A</strong></td>
+              <td>Full 148 GSM Forensic Audit Ledger & Affymetrix QC Status</td>
+              <td>148 rows × 23 cols</td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S1_Full_148_GSM_Audit_Ledger.csv" target="_blank">CSV</a></td>
+            </tr>
+            <tr>
+              <td><strong>Table S1B</strong></td>
               <td>Harmonized 130 Hypobaric Microarrays Forensic Audit</td>
               <td>130 rows × 28 cols</td>
               <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S1_Harmonized_130_Hypobaric_Arrays_Forensic_Audit.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S2A</strong></td>
-              <td>Multi-Task Physical Regression Benchmarks (95% Bootstrap CI)</td>
+              <td>Continuous Physical Regression Benchmarks (95% Bootstrap CI)</td>
               <td>18 rows × 12 cols</td>
               <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S2A_Regression_Benchmarks_Bootstrap95CI.csv" target="_blank">CSV</a></td>
             </tr>
@@ -823,13 +832,19 @@ def generate_index_html():
             </tr>
             <tr>
               <td><strong>Table S2C</strong></td>
+              <td>Covariate Ablation Suite (Covariates vs Transcriptome vs Combined)</td>
+              <td>6 rows × 7 cols</td>
+              <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S2C_Covariate_Ablation_Suite.csv" target="_blank">CSV</a></td>
+            </tr>
+            <tr>
+              <td><strong>Table S2D</strong></td>
               <td>Slice-Based Error Analysis Across Biological Subgroups</td>
               <td>30 rows × 8 cols</td>
               <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S2C_Slice_Based_Error_Analysis.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
               <td><strong>Table S3</strong></td>
-              <td>Exploration Atmosphere Molecular Hub Nodes (22,746 Probesets)</td>
+              <td>Exploration Atmosphere Molecular Hub Nodes (Limma Moderated, 22,746 Probesets)</td>
               <td>22,746 rows × 18 cols</td>
               <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S3_Exploration_Atmosphere_Molecular_Hub_Nodes.csv" target="_blank">CSV</a></td>
             </tr>
@@ -865,8 +880,8 @@ def generate_index_html():
             </tr>
             <tr>
               <td><strong>Table S6A</strong></td>
-              <td>NASA Exploration Atmosphere Counterfactual Predictions</td>
-              <td>6 setpoints × 42 cols</td>
+              <td>NASA Exploration Atmosphere Counterfactual Predictions (with Conformal Bounds)</td>
+              <td>6 setpoints × 44 cols</td>
               <td><a href="https://raw.githubusercontent.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn/main/manuscript/tables/Table_S6A_NASA_Exploration_Atmosphere_Counterfactual_Predictions.csv" target="_blank">CSV</a></td>
             </tr>
             <tr>
