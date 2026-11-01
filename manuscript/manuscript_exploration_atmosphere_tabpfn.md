@@ -1,5 +1,11 @@
 # Decoupling Total Barometric Pressure from Oxygen Partial Pressure in the *Arabidopsis thaliana* Spaceflight Exploration Atmosphere Using the TabPFN v2 Tabular Foundation Model: Molecular Hubs, Single-Nucleus Trajectories, and Physiological Rescue
 
+**Richard J. Barker**$^{1,*}$ and **[Co-authors To Be Determined]**$^{2}$
+
+$^{1}$Department of Biological Sciences, University of Wisconsin-Madison, Madison, WI, USA; Center for Space Exploration (CoSE)  
+$^{2}$[Affiliation To Be Determined]  
+$^{*}$Corresponding author: `dr-richard-barker` / `rbarker2@wisc.edu`
+
 ---
 
 ## Abstract
@@ -371,6 +377,20 @@ All harmonized datasets, modular Python source code (`arabidopsis_exploration_at
 - **Table S6A (`Table_S6A_NASA_Exploration_Atmosphere_Counterfactual_Predictions.csv`):** TabPFN v2 counterfactual pathway and hub-gene predictions ($\Delta\log_2\text{FC} \pm \text{SD}$) with split-conformal 90% and 95% uncertainty intervals across NASA's Exploration Atmosphere setpoints.
 - **Table S6B (`Table_S6B_Leave_One_Condition_Out_Validation.csv`):** Leave-One-Condition-Out (LOCO) validation metrics across all 10 held-out $(P_{\text{total}}, p\text{O}_2) \times \text{Organ}$ regimes.
 - **Table S7 (`Table_S7_PhysioSpace_Stress_Scores.csv`):** Standardized Plant PhysioSpace stress autodecoder scores (z-scores relative to Earth ground baseline) across 10 canonical stress axes, 6 spaceflight mission phases (M1–M6), and organ/tissue partitions.
+
+---
+
+## Acknowledgements
+
+The authors express their sincere and deep gratitude to Dr. Anna-Lisa Paul and Dr. Robert J. Ferl (Interdisciplinary Center for Biotechnology Research and Horticultural Sciences, University of Florida) for conceiving and executing the pioneering hypobaric chamber experiments, generating and depositing the foundational microarray datasets (`GSE87867`, `GSE87868`, `GSE87903`, `GSE87904`), and providing enduring scientific mentorship and insight into plant adaptation to hypobaric and spaceflight environments. This work was supported by NASA Space Biology and the Center for Space Exploration (CoSE).
+
+## Author Contributions
+
+R.J.B. conceived the study, designed the analytical framework, developed the TabPFN tabular machine learning pipeline, curated the multi-omics compendium, conducted the forensic data audit, performed the orthogonal decomposition and counterfactual modeling, generated all figures and tables, and wrote the manuscript. [Co-authors To Be Determined] contributed to specific computational and biological analyses. All authors reviewed and approved the manuscript.
+
+## Competing Interests
+
+The authors declare no competing interests.
 
 ---
 
