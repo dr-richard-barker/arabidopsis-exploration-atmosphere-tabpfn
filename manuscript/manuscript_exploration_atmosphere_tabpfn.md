@@ -2,9 +2,9 @@
 
 **Richard J. Barker**$^{1,*}$ and **[Co-authors To Be Determined]**$^{2}$
 
-$^{1}$Department of Biological Sciences, University of Wisconsin-Madison, Madison, WI, USA; Center for Space Exploration (CoSE)  
+$^{1}$Purdue University, West Lafayette, IN, USA; Center for Space Exploration (CoSE)  
 $^{2}$[Affiliation To Be Determined]  
-$^{*}$Corresponding author: `dr-richard-barker` / `rbarker2@wisc.edu`
+$^{*}$Corresponding author: `barkerrj@purdue.edu`
 
 ---
 

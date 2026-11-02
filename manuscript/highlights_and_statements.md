@@ -24,7 +24,7 @@ All processed intermediate datasets, harmonized metadata audits, out-of-fold pre
 ## Code Availability Statement
 
 The complete, open-source Python analysis pipeline developed in this study is packaged as the `atmos_ml` library under the MIT License. The code is available at:
-`https://github.com/space-biology-ml/arabidopsis-exploration-atmosphere-tabpfn`
+`https://github.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn`
 
 The repository includes:
 - `src/atmos_ml/`: Core modular Python source code for data ingestion, TabPFN v2 tabular foundation model wrapper, leak-free condition-grouped cross-validation, multivariable orthogonal decomposition, SHAP attribution, and counterfactual prediction.

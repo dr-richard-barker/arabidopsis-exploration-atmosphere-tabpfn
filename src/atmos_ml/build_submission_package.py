@@ -28,7 +28,10 @@ def build_cover_letter():
 
 **Title:** Decoupling Total Barometric Pressure from Oxygen Partial Pressure in the *Arabidopsis thaliana* Spaceflight Exploration Atmosphere Using the TabPFN v2 Tabular Foundation Model: Molecular Hubs, Single-Nucleus Trajectories, and Physiological Rescue  
 
-**Authors:** Bioregenerative Life Support Systems (BLiSS) Multi-Omics Consortium & Space Plant Biology Working Group  
+**Authors:** Richard J. Barker$^{1,*}$ and [Co-authors To Be Determined]$^2$  
+$^{1}$Purdue University, West Lafayette, IN 47907, USA; Center for Space Exploration (CoSE)  
+$^{2}$[Affiliation To Be Determined]  
+$^*$Corresponding author: `barkerrj@purdue.edu`  
 
 ---
 
@@ -66,8 +69,10 @@ Thank you very much for your time and consideration.
 
 Sincerely,
 
-**The Authors**  
-Bioregenerative Life Support Systems (BLiSS) Multi-Omics Consortium  
+**Richard J. Barker, Ph.D.**  
+Purdue University, West Lafayette, IN, USA  
+Center for Space Exploration (CoSE)  
+Email: `barkerrj@purdue.edu`  
 """
     (MANUSCRIPT_DIR / "cover_letter.md").write_text(md_content)
     (ARTIFACT_DIR / "cover_letter.md").write_text(md_content)
@@ -135,7 +140,7 @@ All processed intermediate datasets, harmonized metadata audits, out-of-fold pre
 ## Code Availability Statement
 
 The complete, open-source Python analysis pipeline developed in this study is packaged as the `atmos_ml` library under the MIT License. The code is available at:
-`https://github.com/space-biology-ml/arabidopsis-exploration-atmosphere-tabpfn`
+`https://github.com/dr-richard-barker/arabidopsis-exploration-atmosphere-tabpfn`
 
 The repository includes:
 - `src/atmos_ml/`: Core modular Python source code for data ingestion, TabPFN v2 tabular foundation model wrapper, leak-free condition-grouped cross-validation, multivariable orthogonal decomposition, SHAP attribution, and counterfactual prediction.
