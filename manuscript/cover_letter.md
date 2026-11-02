@@ -7,7 +7,7 @@
 **Title:** Decoupling Total Barometric Pressure from Oxygen Partial Pressure in the *Arabidopsis thaliana* Spaceflight Exploration Atmosphere Using the TabPFN v2 Tabular Foundation Model: Molecular Hubs, Single-Nucleus Trajectories, and Physiological Rescue  
 
 **Authors:** Richard J. Barker$^{1,*}$ and [Co-authors To Be Determined]$^2$  
-$^{1}$Purdue University, West Lafayette, IN 47907, USA; Center for Space Exploration (CoSE)  
+$^{1}$Purdue University, West Lafayette, IN 47907, USA  
 $^{2}$[Affiliation To Be Determined]  
 $^*$Corresponding author: `barkerrj@purdue.edu`  
 
@@ -49,5 +49,4 @@ Sincerely,
 
 **Richard J. Barker, Ph.D.**  
 Purdue University, West Lafayette, IN, USA  
-Center for Space Exploration (CoSE)  
 Email: `barkerrj@purdue.edu`  

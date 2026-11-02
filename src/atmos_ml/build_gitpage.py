@@ -515,7 +515,7 @@ def generate_index_html():
     <div class="project-title">Decoupling Total Barometric Pressure from Oxygen Partial Pressure in the <em>Arabidopsis</em> Spaceflight Exploration Atmosphere</div>
     <div style="font-size: 1.1rem; margin-top: -0.5rem; margin-bottom: 1.2rem; opacity: 0.95;">
       <strong>Richard J. Barker</strong><sup>1,*</sup> and <strong>[Co-authors To Be Determined]</strong><sup>2</sup><br>
-      <span style="font-size: 0.88rem; opacity: 0.85;"><sup>1</sup>Purdue University; Center for Space Exploration (CoSE) &nbsp;|&nbsp; <sup>2</sup>[Affiliation To Be Determined] &nbsp;|&nbsp; <sup>*</sup>barkerrj@purdue.edu</span>
+      <span style="font-size: 0.88rem; opacity: 0.85;"><sup>1</sup>Purdue University &nbsp;|&nbsp; <sup>2</sup>[Affiliation To Be Determined] &nbsp;|&nbsp; <sup>*</sup>barkerrj@purdue.edu</span>
     </div>
     <div class="project-tagline">
       A 12-Dataset Multi-Omics Compendium & TabPFN v2 Tabular Foundation Model Synthesis Resolving Molecular Hubs, Single-Nucleus Trajectories, and Physiological Rescue for NASA's 56.54 kPa / 34% O₂ Habitat
@@ -909,7 +909,7 @@ def generate_index_html():
     <section id="citation">
       <h2 class="section-heading">📚 Citation, Authorship & Open Science</h2>
       <p style="font-size: 1.05rem;"><strong>Authors:</strong> Richard J. Barker<sup>1,*</sup> (<code>barkerrj@purdue.edu</code>) and [Co-authors To Be Determined]<sup>2</sup></p>
-      <p style="font-size: 0.92rem; color: #475569; margin-top: 0.2rem;"><sup>1</sup>Purdue University, West Lafayette, IN, USA; Center for Space Exploration (CoSE) &nbsp;|&nbsp; <sup>2</sup>[Affiliation To Be Determined]</p>
+      <p style="font-size: 0.92rem; color: #475569; margin-top: 0.2rem;"><sup>1</sup>Purdue University, West Lafayette, IN, USA &nbsp;|&nbsp; <sup>2</sup>[Affiliation To Be Determined]</p>
       <p style="margin-top: 0.6rem; font-size: 0.95rem; color: #475569;">
         <strong>Acknowledgements:</strong> The authors express sincere and deep gratitude to Dr. Anna-Lisa Paul and Dr. Robert J. Ferl (Interdisciplinary Center for Biotechnology Research and Horticultural Sciences, University of Florida) for conceiving and executing the pioneering hypobaric chamber experiments, generating and depositing the foundational microarray datasets (<code>GSE87867</code>, <code>GSE87868</code>, <code>GSE87903</code>, <code>GSE87904</code>), and providing enduring scientific mentorship and insight into plant adaptation to hypobaric and spaceflight environments.
       </p>

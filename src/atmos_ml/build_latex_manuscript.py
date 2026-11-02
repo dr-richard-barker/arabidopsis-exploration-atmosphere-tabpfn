@@ -275,7 +275,7 @@ def write_tex():
 
 % Authors & Affiliations
 {\normalsize \textsf{\textbf{Richard J. Barker$^{1,*}$} and \textbf{[Co-authors To Be Determined]$^2$}}}\\[4pt]
-{\footnotesize \textsf{$^1$Purdue University, West Lafayette, IN 47907, USA; Center for Space Exploration (CoSE)\\
+{\footnotesize \textsf{$^1$Purdue University, West Lafayette, IN 47907, USA\\
 $^2$Affiliations To Be Determined\\
 $^*$Corresponding author: \texttt{barkerrj@purdue.edu}}}\\[12pt]
 

@@ -2,7 +2,7 @@
 
 **Richard J. Barker**$^{1,*}$ and **[Co-authors To Be Determined]**$^{2}$
 
-$^{1}$Purdue University, West Lafayette, IN, USA; Center for Space Exploration (CoSE)  
+$^{1}$Purdue University, West Lafayette, IN, USA  
 $^{2}$[Affiliation To Be Determined]  
 $^{*}$Corresponding author: `barkerrj@purdue.edu`
 
@@ -382,7 +382,7 @@ All harmonized datasets, modular Python source code (`arabidopsis_exploration_at
 
 ## Acknowledgements
 
-The authors express their sincere and deep gratitude to Dr. Anna-Lisa Paul and Dr. Robert J. Ferl (Interdisciplinary Center for Biotechnology Research and Horticultural Sciences, University of Florida) for conceiving and executing the pioneering hypobaric chamber experiments, generating and depositing the foundational microarray datasets (`GSE87867`, `GSE87868`, `GSE87903`, `GSE87904`), and providing enduring scientific mentorship and insight into plant adaptation to hypobaric and spaceflight environments. This work was supported by NASA Space Biology and the Center for Space Exploration (CoSE).
+The authors express their sincere and deep gratitude to Dr. Anna-Lisa Paul and Dr. Robert J. Ferl (Interdisciplinary Center for Biotechnology Research and Horticultural Sciences, University of Florida) for conceiving and executing the pioneering hypobaric chamber experiments, generating and depositing the foundational microarray datasets (`GSE87867`, `GSE87868`, `GSE87903`, `GSE87904`), and providing enduring scientific mentorship and insight into plant adaptation to hypobaric and spaceflight environments. This work was supported by NASA Space Biology.
 
 ## Author Contributions
 
