@@ -209,6 +209,26 @@ def write_bib():
   journal={arXiv preprint arXiv:2107.07511},
   year={2021}
 }
+
+@article{corey1997hypobaric,
+  title={Toward ideal atmospheres for plant growth in space: a review of hypobaric and hyperbaric responses},
+  author={Corey, Kenneth A and Barta, Daniel J and Wheeler, Raymond M},
+  journal={Life Support \& Biosphere Science},
+  volume={4},
+  number={1-2},
+  pages={33--44},
+  year={1997}
+}
+
+@article{richards2006hypobaric,
+  title={Laser-induced fluorescence imaging of plant stress in hypobaric environments},
+  author={Richards, Jeffrey T and Schuerger, Andrew C and Capelle, Gene A and Hinners, Thomas A},
+  journal={Astrobiology},
+  volume={6},
+  number={6},
+  pages={851--866},
+  year={2006}
+}
 """
     (LATEX_DIR / "references.bib").write_text(bib_content.strip() + "\n", encoding="utf-8")
     print("Wrote references.bib")
@@ -256,7 +276,7 @@ def write_tex():
 % Page headers and footers
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\textsf{\footnotesize \textbf{\color{npjteal}npj} \boldsymbol{\vert} microgravity \;\; (2026) \;\boldsymbol{\vert}\; \url{https://doi.org/10.1038/s41526-026-00452-1}}}
+\fancyhead[L]{\textsf{\footnotesize \textbf{\color{npjteal}npj} \textbf{\textbar} microgravity \;\; (2026) \;\textbf{\textbar}\; \url{https://doi.org/10.1038/s41526-026-00452-1}}}
 \fancyhead[R]{\textsf{\footnotesize R. J. Barker et al.}}
 \fancyfoot[L]{\textsf{\scriptsize Published in partnership with NASA and the Microgravity Research Community}}
 \fancyfoot[R]{\textsf{\footnotesize \textbf{\thepage}}}
@@ -271,7 +291,7 @@ def write_tex():
 \noindent{\footnotesize \textbf{\textsf{ARTICLE}}} \hfill \colorbox{openaccessgreen}{\textcolor{white}{\footnotesize\textbf{\textsf{\;\;OPEN\;\;}}}}\\[10pt]
 
 % Title
-{\raggedright \huge \textbf{\textsf{Decoupling total barometric pressure from oxygen partial pressure in the \textit{Arabidopsis thaliana} spaceflight exploration atmosphere using the TabPFN v2 tabular foundation model}}\\[12pt]}
+{\raggedright \huge \textbf{\textsf{Decoupling barosensory from hypoxia signaling in plants under NASA exploration atmospheres reveals humidity compensation as an environmental countermeasure}}\\[12pt]}
 
 % Authors & Affiliations
 {\normalsize \textsf{\textbf{Richard J. Barker$^{1,*}$} and \textbf{[Co-authors To Be Determined]$^2$}}}\\[4pt]
@@ -284,7 +304,9 @@ $^*$Corresponding author: \texttt{barkerrj@purdue.edu}}}\\[12pt]
 {\color{gray!40}\rule{\linewidth}{0.5pt}}\\[4pt]
 \noindent
 \textbf{\textsf{ABSTRACT}}\;\;
-Future crewed lunar and Martian surface habitats, extravehicular activity (EVA) staging airlocks, and bioregenerative life-support systems will operate under NASA's reduced-pressure, oxygen-enriched \textbf{Exploration Atmosphere} ($56.54\text{ kPa}$ [$8.2\text{ psia}$], $34\%\ \text{O}_2$, oxygen partial pressure $p\text{O}_2 = 19.22\text{ kPa}$; pre-EVA staged decompression $70.33\text{ kPa}$ [$10.2\text{ psia}$], $26.5\%\ \text{O}_2$, $p\text{O}_2 = 18.64\text{ kPa}$). While enriching fractional $\text{O}_2$ restores normoxic $p\text{O}_2$, reducing total barometric pressure ($P_{\text{total}}$) inversely accelerates binary gas and water-vapor diffusivity ($D \propto P_{\text{total}}^{-1}$; $1.72\times$ faster at $56.54\text{ kPa}$ than at $97\text{ kPa}$ ISS cabin pressure), thinning the boundary layer and accelerating transpiration independently of cellular oxygen availability. However, small sample sizes ($n = 9\text{--}130$ per study), high feature dimensionality ($p = 22,746$ probesets), and historical metadata ambiguities have prevented classical machine learning models from cleanly separating pure barosensory ($P_{\text{total}}$) signaling from hypoxia ($p\text{O}_2$) signaling or linking these molecular hubs to cell-type trajectories and whole-plant physiology. Here, we harmonize a 12-dataset multi-omics compendium spanning 281 microarray hybridizations, 40,860 single-nucleus root-tip transcriptomes, 326 physiological gas-exchange and chlorophyll fluorescence records, LC-MS metabolomics across factorial pressure $\times$ humidity regimes, and 5,454 iTRAQ submergence proteins, and apply the \textbf{TabPFN v2} prior-data fitted tabular foundation model to resolve the plant response to exploration atmospheres. A forensic audit ledger tracking all 148 series-level GSM records deduplicates 18 shared arrays to establish 130 unique hypobaric arrays passing standard Affymetrix array QC (NUSE medians $1.00 \pm 0.25$, RLE IQRs $0.79 \pm 0.37$, percent present $81.7 \pm 10.0\%$), and resolves disputed $75\text{ kPa}$ arrays as Shoots ($P(\text{Shoot}\mid\mathbf{x}) > 0.99$). Under leak-free condition-grouped cross-validation, TabPFN v2 outperforms classical baselines across continuous Hypobaria Index regression ($R^2 = 0.9134$), Hypoxia Index regression ($R^2 = 0.9733$), and 4-class regime classification ($\text{ROC\_AUC} = 0.9623$, Accuracy = $86.21\%$). Orthogonal partial regression with empirical Bayes variance moderation reveals 1,003 Pure Hypoxia hubs, 380 Pure Barosensory hubs, and 21 Additive Dual Hubs. Single-nucleus transcriptomics and cell-type translatomes show strict spatial partitioning between epidermal barosensing and pan-lineage hypoxia. Physiological and metabolomic triangulation at $62\text{ kPa}$ reveals that boundary-layer vapor stripping elevates evaporative demand by $+73.23\%$ and halves net carbon assimilation, while elevating relative humidity to $70\%\ \text{RH}$ rescues chloroplast oxylipin galactolipids. Finally, Leave-One-Condition-Out validation and counterfactual synthesis indicate that while $34\%\ \text{O}_2$ enrichment mitigates $>88\%$ of root anaerobic activation, physical barosensory remodeling persists—establishing that humidity/VPD compensation ($75\text{--}80\%\ \text{RH}$) provides an immediate, non-genetic engineering countermeasure for lunar and Martian habitation.\\[4pt]
+Reduced-pressure, oxygen-enriched atmospheres are critical for future lunar and Martian habitats but impose complex stresses on plants beyond hypoxia. While oxygen enrichment restores normoxic partial pressure, reduced total pressure accelerates gas diffusivity, perturbing leaf boundary-layer mass transfer and inducing barosensory stress. Here we harmonized a multi-omics compendium of 281 microarrays, 40,860 single-nucleus transcriptomes, physiological, metabolomic, and proteomic datasets, applying the TabPFN v2 tabular foundation model to decouple hypoxia from barosensory signaling. We identified distinct molecular hubs: hypoxia-responsive genes silenced by oxygen enrichment and barosensory modules persisting under normoxia, localized to epidermal and mesophyll tissues. Physiological assays revealed increased vapor pressure deficit, stomatal closure, and reduced photosynthesis under hypobaria, which were mitigated by elevated humidity. Our findings indicate that hypobaric stress in exploration atmospheres is primarily a boundary-layer vapor-loss challenge rather than hypoxia, and that humidity compensation offers an effective strategy to maintain plant health in extraterrestrial habitats.\\[6pt]
+\noindent
+\textbf{\textsf{Keywords:}} Hypobaria; Hypoxia; \textit{Arabidopsis thaliana}; Plant stress physiology; Space biology; Tabular foundation models.\\[4pt]
 \noindent
 {\color{gray!40}\rule{\linewidth}{0.5pt}}\\[6pt]
 
@@ -403,7 +425,7 @@ At NASA's Exploration Habitat setpoint ($56.54\text{ kPa} / 34\%\ \text{O}_2, p\
 \begin{multicols}{2}
 
 \subsection*{Workpackage 6: PhysioSpace Stress Autodecoder Across Mission Phases}
-Projecting profiles across 10 canonical stress axes using the Plant PhysioSpace autodecoder demonstrated that nominal Exploration Atmosphere habitation (M3) generates no hypoxia ($z = -0.16$), but produces shoot-localized boundary-layer desiccation ($z = +1.86$, cell-wall strain $z = +1.94$, stomatal resistance $z = +1.82$; Fig.~7a--b). Elevating habitat relative humidity to $80\%\ \text{RH}$ (M6) attenuates osmotic stress ($\Delta z = -1.90$), relaxes stomatal closure ($\Delta z = -1.76$), and returns the trajectory toward homeostatic baseline (Fig.~7c--d).
+Projecting profiles across 10 canonical stress axes using the Plant PhysioSpace autodecoder demonstrated that nominal Exploration Atmosphere habitation (M3) generates no hypoxia ($z = -0.16$), but produces shoot-localized boundary-layer desiccation ($z = +1.86$, cell-wall strain $z = +1.94$, stomatal resistance $z = +1.82$; Fig.~7a--b). Elevating habitat relative humidity to $80\%\ \text{RH}$ (M6) achieves strong hypobaric stress mitigation: osmotic stress is reduced by $\Delta z = -1.90$ (dropping to $z = -0.04$), stomatal resistance relaxes by $\Delta z = -1.76$ (to $z = +0.06$), cell-wall mechanostrain drops by $\Delta z = -1.70$ (to $z = +0.24$), and aquaporin flux approaches normalization by $\Delta z = -1.60$ (to $z = +0.12$; Fig.~7c--d).
 
 \end{multicols}
 
@@ -417,9 +439,11 @@ Projecting profiles across 10 canonical stress axes using the Plant PhysioSpace 
 \begin{multicols}{2}
 
 \section*{DISCUSSION}
-Our findings reframe the understanding of hypobaric stress in space exploration. Under NASA's Exploration Atmosphere ($56.54\text{ kPa} / 34\%\ \text{O}_2$), restoring $p\text{O}_2$ to near-sea-level levels largely relieves internal cellular hypoxia. Instead, plants respond primarily to boundary-layer vapor stripping driven by accelerated binary diffusivity ($D \propto P_{\text{total}}^{-1}$), inducing stomatal closure and diffusive carbon limitation.
+For decades, spaceflight plant experiments and hypobaric chamber simulations have conflated low pressure with low oxygen\cite{corey1997hypobaric, paul2004hypobaric, paul2006spaceflight, richards2006hypobaric}. Because Earth-analog hypobaric chambers frequently pumped down ambient air without oxygen enrichment, historical studies observed dramatic inductions of alcohol dehydrogenase (\textit{ADH1}), pyruvate decarboxylase (\textit{PDC1}), and non-symbiotic hemoglobins (\textit{GLB1}/\textit{AHB1}), cementing the widespread dogma that hypobaria is fundamentally a hypoxic stress\cite{paul2004hypobaric, zhou2017dissecting}.
 
-Importantly, this mechanism provides a non-genetic engineering countermeasure for Bioregenerative Life Support Systems (BLiSS). Maintaining plant chamber relative humidity at $70\text{--}80\%\ \text{RH}$ suppresses the elevated leaf-to-air VPD, offsetting accelerated diffusivity, relaxing stomatal resistance, and preserving photosynthetic productivity in lunar and Martian surface habitats.
+Our deployment of TabPFN v2 orthogonal decomposition alongside the Plant PhysioSpace Stress Autodecoder directly overturns this dogma for operational spaceflight architectures. Under NASA's nominal Exploration Atmosphere ($56.54\text{ kPa} / 34\%\ \text{O}_2$), the oxygen partial pressure ($19.22\text{ kPa}$) is virtually identical to sea-level terrestrial air ($21.27\text{ kPa}$). Consequently, internal cellular hypoxia is strongly suppressed ($z = -0.16$ in shoots; Fig.~7a). Instead, plants experience reduced atmospheric pressure as an acute boundary-layer vapor-loss stress caused by the kinetic acceleration of binary gas diffusion ($D \propto P_{\text{total}}^{-1}$). Major molecular challenges faced by plants in exploration habitats include cuticular micro-dehydration, cell-wall mechanotension (\textit{TCH4}, \textit{XTH15}, \textit{MSL8}), and stomatal closure (\textit{SLAC1}, \textit{OST1}, \textit{PYL1}), which reduce mesophyll internal $\text{CO}_2$ and substantially decrease photosynthetic carbon assimilation.
+
+Importantly, this mechanism provides a non-genetic engineering countermeasure for Bioregenerative Life Support Systems (BLiSS): maintaining chamber relative humidity at $75\text{--}80\%\ \text{RH}$ (Fig.~7c--d) attenuates the elevated boundary-layer VPD, mitigating stomatal restriction and supporting stable carbon assimilation in reduced-pressure exploration habitats.
 
 \section*{METHODS}
 \subsection*{Microarray Ingestion, Probe Mapping, and Forensic Audit}

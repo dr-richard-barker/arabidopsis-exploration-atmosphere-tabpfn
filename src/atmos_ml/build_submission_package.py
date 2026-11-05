@@ -26,7 +26,7 @@ def build_cover_letter():
 **Target Journal:** *Nature Plants* / *npj Microgravity* / *Nature Communications*  
 **Article Type:** Original Research Article  
 
-**Title:** Decoupling Total Barometric Pressure from Oxygen Partial Pressure in the *Arabidopsis thaliana* Spaceflight Exploration Atmosphere Using the TabPFN v2 Tabular Foundation Model: Molecular Hubs, Single-Nucleus Trajectories, and Physiological Rescue  
+**Title:** Decoupling Barosensory from Hypoxia Signaling in Plants Under NASA Exploration Atmospheres Reveals Humidity Compensation as an Environmental Countermeasure  
 
 **Authors:** Richard J. Barker$^{1,*}$ and [Co-authors To Be Determined]$^2$  
 $^{1}$Purdue University, West Lafayette, IN 47907, USA  
@@ -37,7 +37,7 @@ $^*$Corresponding author: `barkerrj@purdue.edu`
 
 Dear Senior Editor,
 
-We are delighted to submit our manuscript entitled **"Decoupling Total Barometric Pressure from Oxygen Partial Pressure in the *Arabidopsis thaliana* Spaceflight Exploration Atmosphere Using the TabPFN v2 Tabular Foundation Model: Molecular Hubs, Single-Nucleus Trajectories, and Physiological Rescue"** for consideration as an Original Research Article in your journal.
+We are delighted to submit our manuscript entitled **"Decoupling Barosensory from Hypoxia Signaling in Plants Under NASA Exploration Atmospheres Reveals Humidity Compensation as an Environmental Countermeasure"** for consideration as an Original Research Article in your journal.
 
 As space agencies prepare for permanent lunar outposts and long-duration crewed missions to Mars under the Artemis program, surface habitats and bioregenerative life-support systems (BLSS) will transition from the sea-level cabin atmosphere of the International Space Station ($97\\text{--}101.3\\text{ kPa}$, $21\\%\\ \\text{O}_2$) to NASA's **Exploration Atmosphere** setpoints: **$56.54\\text{ kPa}$ ($8.2\\text{ psia}$) at $34\\%\\ \\text{O}_2$** ($p\\text{O}_2 = 19.22\\text{ kPa}$) for habitat operations and **$70.33\\text{ kPa}$ ($10.2\\text{ psia}$) at $26.5\\%\\ \\text{O}_2$** ($p\\text{O}_2 = 18.64\\text{ kPa}$) for pre-EVA staged decompression.
 
